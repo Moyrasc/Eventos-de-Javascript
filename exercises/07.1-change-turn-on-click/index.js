@@ -1,4 +1,4 @@
-var currentUser = "Mario";
+let currentUser = "Mario";
 
 window.onload = function loadfn() {
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
@@ -7,8 +7,10 @@ window.onload = function loadfn() {
 window.turnChanger = function turnChanger() {
 	if (currentUser == "Mario") {
 		currentUser = "Juan";
-	} else {
-		currentUser = "Mario";
+	} else if (currentUser == "Juan"){
+		currentUser = "Josh";
+	}else{
+		currentUser ="Mario"
 	}
 
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";
