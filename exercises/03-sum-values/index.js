@@ -6,6 +6,8 @@ window.calculateSumListener = function() {
 	let stringB = document.getElementById("secondNumber").value;
 
 	//your code goes here
-	let totalSum = document.querySelector("#resultNumber").value;
-	totalSum = parseInt(stringA) + parseInt(stringB)
+	
+	totalSum = parseInt(stringA) + parseInt(stringB);
+
+	document.querySelector("#resultNumber").value = totalSum
 };
